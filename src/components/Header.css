@@ -1,0 +1,32 @@
+.header {
+  height: 15vh;
+  background-color: #1d1f39;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header__left {
+  flex: 1;
+  background: url(../image/logonobg-01.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+.header__right {
+  display: flex;
+  color: #e4e4e2;
+  width: auto;
+  justify-content: space-between;
+}
+
+.header__right > ul > li {
+  list-style: none;
+  float: left;
+  margin-right: 10px;
+  font-size: x-large;
+  font-weight: 600;
+}
