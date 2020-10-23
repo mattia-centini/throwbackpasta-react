@@ -1,0 +1,62 @@
+.about {
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.about__top > .about__topPin {
+  background: url(../image/pin-01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+}
+.about__top > .about__topPin:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.about__top h3 {
+  font-size: 2rem;
+  color: #1d1f39;
+}
+
+.about__center {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  flex: 1;
+}
+
+.about__center > .about__centerImg {
+  background-image: url(../image/IMG_06.jpg);
+  background-size: cover;
+  /* object-fit: contain; */
+  height: 400px;
+  width: 400px;
+  background-color: red;
+  margin: 0px 15px 0px 5px;
+}
+
+.about__center > p {
+  padding-right: 15px;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.about__bottom {
+  height: 30%;
+  padding: 15px;
+}
+
+.about__bottom > p {
+  line-height: 1.6;
+}
