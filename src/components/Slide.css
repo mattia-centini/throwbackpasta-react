@@ -1,0 +1,22 @@
+.slide {
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.slide > img {
+  object-fit: cover;
+  height: 500px;
+}
+
+.slide > p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #d9d9d9;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+}

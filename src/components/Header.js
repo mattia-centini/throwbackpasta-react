@@ -1,5 +1,7 @@
 import React from 'react'
 import './Header.css'
+import Button from "@material-ui/core/Button";
+
 
 function Header() {
     return (
@@ -7,12 +9,10 @@ function Header() {
             <div className="header__left">
             </div>
             <div className="header__right">
-                <ul>
-                    <li>Workshops</li>
-                    <li>About me</li>
-                    <li>Contact</li>
-
-                </ul>
+            
+                    <Button>Workshops</Button>
+                    <Button>About me</Button>
+                    <Button>Contact</Button>
             </div>
             
         </div>

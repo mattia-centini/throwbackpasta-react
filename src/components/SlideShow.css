@@ -1,0 +1,16 @@
+.slideshow {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  height: 60%;
+  position: relative;
+}
+
+.slideshow > button {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  height: 50px;
+  background-color: red;
+}
