@@ -21,7 +21,8 @@
   width: 70px;
 }
 .about__top > .about__topPin:nth-child(3) {
-  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .about__top h3 {
@@ -34,29 +35,33 @@
   justify-content: space-between;
   height: 50%;
   flex: 1;
+  align-items: ;
 }
 
-.about__center > .about__centerImg {
-  background-image: url(../image/IMG_06.jpg);
-  background-size: cover;
-  /* object-fit: contain; */
+.about__center > img {
   height: 400px;
-  width: 400px;
-  background-color: red;
+  width: 300px;
+  object-fit: contain;
   margin: 0px 15px 0px 5px;
 }
 
 .about__center > p {
-  padding-right: 15px;
+  padding: 6px 15px 0px 0px;
   line-height: 1.6;
   width: 80%;
+  overflow: scroll;
 }
 
 .about__bottom {
   height: 30%;
   padding: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .about__bottom > p {
   line-height: 1.6;
+  text-align: center;
+  padding-right: 15px;
+  width: 80%;
 }

@@ -43,7 +43,6 @@ function SlideShow() {
                     slides={slides}
                     
                 /> 
-                <p>{index}</p>
                 <button onClick={() => {
                     if(index === 0){
                         setIndex(index + 1)
