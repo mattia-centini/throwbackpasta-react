@@ -6,14 +6,17 @@ import winepour from '../image/winepour.jpg'
 
 function CardsContainer() {
 
-    const images = [
-        {
-            src: {pastachef},
-        },
-        {
-            src: {winepour}
-        }
-    ]
+        const details = [
+            {
+                title: "Pasta Workshop",
+                text: "Become a Pro Pasta Maker"
+            },
+            {
+                title: "Wine Tasting",
+                text: "Learn Tasting Skills"
+            }
+        ]
+    
 
     return (
         <div className="cardsContainer">
@@ -23,11 +26,15 @@ function CardsContainer() {
                     <div className="cardsContainer__topPin"></div>
                 </div>
             <div className="cardsContainer__cards">
-                <Card
-                    src={images[0].src}
+                <Card 
+                    src={pastachef}
+                    title={details[0].title}
+                    text={details[0].text}
                 />
                 <Card 
-                src={images[1].src}
+                        src={winepour}
+                        title={details[1].title}
+                        text={details[1].text}
                 />
             </div>
         </div>

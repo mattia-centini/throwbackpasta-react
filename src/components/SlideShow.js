@@ -36,7 +36,6 @@ function SlideShow() {
     return    (
     
         <div className="slideshow">
-          
                     <Slide 
                     src={slides[index].img}
                     text={slides[index].text}
@@ -44,11 +43,11 @@ function SlideShow() {
                     
                 /> 
                 <button onClick={() => {
-                    if(index === 0){
-                        setIndex(index + 1)
-                    }if(index === slides.length){
-                        slides[index] = 0
-                    }else(setIndex(index + 1))
+                    if(index !== slides.length - 1)  {
+                      setIndex(index => index + 1)
+                    }else{ setIndex(0) }
+                    
+
                     }}>+</button>
               
         

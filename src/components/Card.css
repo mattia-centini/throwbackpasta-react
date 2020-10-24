@@ -1,0 +1,18 @@
+.MuiCardContent-root > .title {
+  text-align: center;
+  font-weight: bolder;
+  color: #1d1f39;
+}
+
+.MuiCardContent-root > .text {
+  text-align: center;
+}
+
+.MuiCardActions-root {
+  background-color: #1d1f39;
+}
+
+.MuiCardActions-root > button {
+  color: #f6f6f6;
+  width: 100%;
+}
