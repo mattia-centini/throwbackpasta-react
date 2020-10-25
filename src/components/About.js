@@ -4,7 +4,7 @@ import chef from '../image/chef.jpg'
 
 function About() {
     return (
-        <div className="about">            
+        <div className="about" id="about">            
             <div className="about__top">
                 <div className="about__topPin"></div>
                 <h3>About Me</h3>

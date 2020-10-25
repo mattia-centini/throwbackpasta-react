@@ -8,12 +8,18 @@
 
 .header__left {
   flex: 1;
-  background: url(../image/logonobg-01.png);
+  /* background: url(../image/logonobg-01.png);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   height: 100px;
   width: 100px;
   margin-left: 15px;
+}
+
+.header__left img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
 }
 
 .header__right {

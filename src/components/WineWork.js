@@ -1,10 +1,13 @@
 import React from 'react'
+import Header from './Header'
 import './WineWork.css'
 
 function WineWork() {
     return (
-        <div>
-                <h1>Im WineWork</h1>
+        <div className="winework">
+            <Header />
+            <h1>Im WineWork</h1>
+            
         </div>
     )
 }

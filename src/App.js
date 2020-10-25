@@ -14,22 +14,24 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-          <Route>
-            <WineWork path="/wine"/>
+
+          <Route path="/wine">
+            <WineWork/>
           </Route>
+
           <Route path="/pasta">
-            < PastaWork />
+            <PastaWork />
           </Route>
-          <Route path="/home">
+
+          <Route exact path="/">
               <Header />
               <Main />
               <About />
               <CardsContainer />
           </Route>
+
         </Switch>
       </Router>
-    
-      
       
     </div>
   );

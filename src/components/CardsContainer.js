@@ -19,7 +19,7 @@ function CardsContainer() {
     
 
     return (
-        <div className="cardsContainer">
+        <div className="cardsContainer" id="workshops">
             <div className="cardsContainer__top">
                 <div className="cardsContainer__topPin"></div>
                     <h3>The Workshops</h3>
