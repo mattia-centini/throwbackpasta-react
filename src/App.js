@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Main from './components/Main'
 import About from './components/About'
 import CardsContainer from './components/CardsContainer'
+import Contacts from './components/Contacts'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PastaWork from './components/PastaWork'
 import WineWork from './components/WineWork'
@@ -28,6 +29,7 @@ function App() {
               <Main />
               <About />
               <CardsContainer />
+              <Contacts />
           </Route>
 
         </Switch>

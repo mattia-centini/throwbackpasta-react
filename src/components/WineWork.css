@@ -1,0 +1,44 @@
+.winework {
+  height: 100vh;
+}
+
+.winework__container {
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.winework__left {
+  position: relative;
+  /* background: url(../image/pastachef.jpg); */
+  /* background-size: cover; */
+  background: linear-gradient(
+      rgba(224, 224, 224, 0.3),
+      rgba(224, 224, 224, 0.3)
+    ),
+    url("../image/winepour.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  min-width: 400px;
+  height: 500px;
+  /* background-color: rgba(241, 213, 193, 0.5); */
+  border-radius: 20px;
+  margin: 0px 50px 0px 50px;
+}
+
+.winework__left > h3 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.winework__left > p {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+}
+
+.winework__right {
+  margin: 0px 50px 0px 50px;
+}

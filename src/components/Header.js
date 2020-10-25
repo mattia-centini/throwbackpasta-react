@@ -55,13 +55,13 @@ function Header() {
                              <Button>
                                  <Link 
                                     activeClass="active"
-                                    to="contact"
+                                    to="contacts"
                                     spy={true}
                                     smooth={true}
                                     offset={0}
                                     duration={500}
                                         >
-                                    Contact
+                                    Contacts
                                  </Link>
                              </Button> 
             </div>

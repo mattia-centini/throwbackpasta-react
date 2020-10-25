@@ -3,6 +3,7 @@ import './CardsContainer.css'
 import Card from './Card'
 import pastachef from '../image/pastachef.jpg'
 import winepour from '../image/winepour.jpg'
+import {Link} from 'react-router-dom';
 
 function CardsContainer() {
 
@@ -26,16 +27,22 @@ function CardsContainer() {
                     <div className="cardsContainer__topPin"></div>
                 </div>
             <div className="cardsContainer__cards">
+                <Link to='/pasta'>
                 <Card 
                     src={pastachef}
                     title={details[0].title}
                     text={details[0].text}
                 />
+                </Link>
+                
+                <Link to='/wine'>
                 <Card 
                         src={winepour}
                         title={details[1].title}
                         text={details[1].text}
                 />
+                </Link>
+                
             </div>
         </div>
     )
