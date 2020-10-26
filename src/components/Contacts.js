@@ -2,12 +2,13 @@ import React from 'react'
 import './Contacts.css'
 import Header from './Header'
 import Footer from './Footer'
+import ContactForm from './ContactForm'
 
 function Contacts() {
     return (
         <div className='contacts' id='contacts'>
             <Header />
-            <div className='contacts__main'>
+            <div className='contacts__container'>
                 <div className='contacts__left'>
                     <h3>Contacts</h3>
                     <p>
@@ -21,7 +22,7 @@ function Contacts() {
                         </p>
                 </div>
                 <div className='contacts__right'>
-                    contact form
+                    <ContactForm />
                 </div>
             </div>
             <Footer />

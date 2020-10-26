@@ -16,9 +16,7 @@ function Header() {
                 <NavLink to='/'>
                 <img src={logo} alt='throwback pasta logo'/>
                     </NavLink>        
-                            
-                
-                    
+                                  
 
                     
                 </div>
