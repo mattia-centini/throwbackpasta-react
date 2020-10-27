@@ -22,12 +22,12 @@ export default function MediaCard({src, title, text}) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
+    <Card className={`card ${classes.root}`}>
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={src}
-          title="Contemplative Reptile"
+          
         />
         <CardContent className="cardContent">
           <Typography className="title" gutterBottom variant="h5" component="h2">

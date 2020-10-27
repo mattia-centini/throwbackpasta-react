@@ -27,6 +27,7 @@
   color: #e4e4e2;
   width: auto;
   justify-content: space-between;
+  margin-right: 15px;
 }
 
 .header__right > button {

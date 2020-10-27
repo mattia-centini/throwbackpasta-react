@@ -38,3 +38,7 @@
   margin-bottom: auto;
   margin-top: 50px;
 }
+
+.cardsContainer__cards > a {
+  text-decoration: none;
+}

@@ -3,7 +3,7 @@
 }
 
 .contacts__container {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,6 +26,7 @@
   /* background-color: rgba(241, 213, 193, 0.5); */
   border-radius: 20px;
   margin: 0px 50px 0px 50px;
+  overflow: scroll;
 }
 
 .contacts__left > h3 {
@@ -40,7 +41,7 @@
 }
 
 .contacts__right {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50px 0px 0px;
   position: relative;
   top: 10px;
 }
