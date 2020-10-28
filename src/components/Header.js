@@ -20,6 +20,9 @@ function Header() {
 
                     
                 </div>
+                <div className="header__centre">
+                    <h3>Original Pasta Lessons</h3>
+                </div>
            
            
             <div className="header__right">

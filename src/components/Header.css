@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
 .header {
   height: 15vh;
   background-color: #1d1f39;
@@ -7,7 +9,6 @@
 }
 
 .header__left {
-  flex: 1;
   /* background: url(../image/logonobg-01.png);
   background-size: contain;
   background-repeat: no-repeat; */
@@ -20,6 +21,21 @@
   height: 100px;
   width: 100px;
   object-fit: contain;
+}
+
+.header__centre {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header__centre > h3 {
+  font-family: "Great Vibes", cursive;
+  color: #e4e4e2;
+  font-size: 3rem;
+  letter-spacing: 10px;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .header__right {

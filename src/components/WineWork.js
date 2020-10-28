@@ -1,14 +1,28 @@
 import React from 'react'
-import Header from './Header'
+import {NavLink} from 'react-router-dom'
 import './WineWork.css'
 import MyCalendar from './MyCalendar'
+import logo from '../image/logonobg-01.png'
 
 
 
 function WineWork() {
     return (
         <div className="winework">
-            <Header />
+
+<div className="winework__top">
+                    <div className='winework__topLeft'>
+                        <NavLink to='/'>
+                            <img src={logo} alt='throwback pasta logo'/>
+                        </NavLink> 
+                    </div>
+                            
+                    <div className="winework__topRight">
+                        <h3>Original Pasta Lessons</h3>
+                    </div>   
+                                        
+                </div>
+            
             <div className="winework__container">
                     <div className="winework__left">
                         <h3>Wine Tasting Workshop</h3>
