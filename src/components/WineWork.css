@@ -66,12 +66,16 @@
 .winework__left > h3 {
   text-align: center;
   margin-top: 10px;
+  font-size: x-large;
+  color: #1d1f39;
 }
 
 .winework__left > p {
   position: absolute;
   top: 30%;
   text-align: center;
+  margin: 0px 10px 0px 10px;
+  line-height: 1.6;
 }
 
 .winework__right {

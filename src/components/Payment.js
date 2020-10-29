@@ -31,18 +31,16 @@ function Payment() {
 
     return (
         <div className="payment">
-            <div className="payment__container">
-                <h1>{product.name}</h1>
-                    <h3>{product.price}zl</h3>
-                    <h4>{product.desciption}</h4>
+            <div className="payment__container">                            
                     <StripeCheckout 
                     stripeKey ='pk_test_51HgsVmJLHwfICe3TCeazJJKdDWM8gvKXJoelNqbYjnfcfs5SfWuAMayJVXvYzWxdIlwEfnNiQtPE4iyfzOhptidh00iFgHpUy2'
                     // token={handleToken}
                     amount={product.price * 100}
                     billingAddress
                     shippingAddress
-                    name={product.name}
+                    // name={product.name}
                     />
+                    <h3>{product.price}zl</h3>  
             </div>
             
         </div>

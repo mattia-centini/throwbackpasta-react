@@ -1,3 +1,13 @@
 .payment {
   height: 100px;
 }
+
+.payment__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment__container > h3 {
+  margin-left: auto;
+}
