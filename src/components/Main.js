@@ -6,7 +6,7 @@ import SlideShow from './SlideShow'
 function Main() {
     return (
         <div className="main" id="main">
-            <SlideShow />
+            <SlideShow className="main__slideShow" />
         </div>
     )
 }
