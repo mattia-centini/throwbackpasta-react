@@ -7,14 +7,31 @@ function SlideShow() {
 
     const [index, setIndex] = useState(0);
 
-    useEffect(() => {
-      console.log('image changed')
-    //   setInterval(() => {
+    // useEffect(() => {
+    //   console.log('started')
+    //   const interval = setInterval(() => {
+    //     setIndex(index => index + 1)
+    //     if(index === slides.length - 1){
+    //       console.log('ended')
+    //       setIndex(index => index === 0)
+    //     }
+        
+    //   }, 1000);
+      
+    //   return () => clearInterval(interval)
+    // },[])
+
+
+    //  useEffect(() => {
+    //     console.log('you are slideshow')
+    //    const interval =  setInterval(() => {
     //     if(index !== slides.length - 1)  {
     //       setIndex(index => index + 1)
-    //     }else{ setIndex(0) }
-    // }, 3000);
-    }, [index])
+    //     }else{ setIndex(0) } 
+    //   }, 3000);
+    //   return () => clearInterval(interval)
+    //   },[])
+
 
     const slides = [
         {
@@ -31,6 +48,10 @@ function SlideShow() {
         },
       
       ];
+
+   
+
+     
       
 
     return    (
@@ -42,13 +63,18 @@ function SlideShow() {
                     slides={slides}
                     
                 /> 
-                <button onClick={() => {
+                
+                <button 
+                
+      
+                
+                onClick={() => {
                     if(index !== slides.length - 1)  {
                       setIndex(index => index + 1)
-                    }else{ setIndex(0) }
-                    
-
-                    }}>+</button>
+                    }else{ setIndex(0) }                    
+                    }}
+                    >+
+                    </button>
               
         
         </div>
