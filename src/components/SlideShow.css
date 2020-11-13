@@ -1,6 +1,6 @@
 .slideshow {
   width: 80%;
-  height: auto;
+  height: 500px;
   display: flex;
   /* position: relative; */
   align-items: center;

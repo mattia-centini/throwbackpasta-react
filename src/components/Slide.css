@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  height: 100%;
 }
 
 .slide > img {
