@@ -8,36 +8,43 @@ import Contacts from './components/Contacts'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import PastaWork from './components/PastaWork'
 import WineWork from './components/WineWork'
-
+import SignUp from './components/SignUp'
+import 'bootstrap/dist/css/bootstrap.min.css'
+// import {AuthProvider} from './contexts/AuthContext'
 
 function App() {
   return (
     
-    <div className="app">
+    
+      <div className="app">
  
-      <Router>
-        <Switch>
+          <Router>
+            <Switch>
 
-          <Route path="/wine">
-            <WineWork/>
-          </Route>
+            <Route path="/signup">
+                <SignUp/>
+              </Route>
 
-          <Route path="/pasta">
-            <PastaWork />
-          </Route>
+              <Route path="/wine">
+                <WineWork/>
+              </Route>
 
-          <Route exact path="/">
-              <Header />
-              <Main />
-              <About />
-              <CardsContainer />
-              <Contacts />
-          </Route>
+              <Route path="/pasta">
+                <PastaWork />
+              </Route>
 
-        </Switch>
-      </Router>
-      
-    </div>
+              <Route exact path="/">
+                  <Header />
+                  <Main />
+                  <About />
+                  <CardsContainer />
+                  <Contacts />
+              </Route>
+
+            </Switch>
+          </Router>
+ 
+    </div>    
   );
 }
 
