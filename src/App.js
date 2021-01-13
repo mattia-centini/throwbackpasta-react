@@ -1,14 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
-// import Main from "./components/Main";
-// import About from "./components/About";
-// import CardsContainer from "./components/CardsContainer";
-// import Contacts from "./components/Contacts";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import PastaWork from "./components/PastaWork";
-// import WineWork from "./components/WineWork";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Navbar from "./components/Navbar/Navbar";
 import {
   Navbar,
   WineWork,
@@ -17,34 +10,77 @@ import {
   Main,
   CardsContainer,
   About,
+  Cart,
 } from "./components";
+import { commerce } from "./lib/commerce";
 
 function App() {
+  const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
+
+  const fetchProducts = async () => {
+    const { data } = await commerce.products.list();
+    setProducts(data);
+  };
+
+  const fetchCart = async () => {
+    setCart(await commerce.cart.retrieve());
+  };
+
+  const handleAddToCard = async (productId, quantity) => {
+    const { cart } = await commerce.cart.add(productId, quantity);
+    setCart(cart);
+  };
+
+  const handleUpdateCartQty = async (productId, quantity) => {
+    const { cart } = await commerce.cart.update(productId, quantity);
+    setCart(cart);
+  };
+
+  const handleRemoveFromCart = async (productsId) => {
+    const { cart } = await commerce.cart.remove(productsId);
+    setCart(cart);
+  };
+
+  const handleEmptyCart = async () => {
+    const { cart } = await commerce.cart.empty();
+    setCart(cart);
+  };
+
+  useEffect(() => {
+    fetchProducts();
+    fetchCart();
+  }, []);
+
   return (
-    <div className="app">
-      <Router>
+    <Router>
+      <div className="app">
+        <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route path="/wine">
             <WineWork />
           </Route>
-          <Route path="/navbar">
-            <Navbar />
-          </Route>
-
           <Route path="/pasta">
-            <PastaWork />
+            <PastaWork products={products} onAddToCart={handleAddToCard} />
+          </Route>
+          <Route path="/cart">
+            <Cart
+              cart={cart}
+              handleUpdateCartQty={handleUpdateCartQty}
+              handleRemoveFromCart={handleRemoveFromCart}
+              handleEmptyCart={handleEmptyCart}
+            />
           </Route>
 
           <Route exact path="/">
-            <Navbar />
             <Main />
             <About />
             <CardsContainer />
             <Contacts />
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

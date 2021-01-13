@@ -23,6 +23,7 @@ function Navbar({ totalItems }) {
       <AppBar position="fixed" className={classes.appBar} color="inherit">
         <Toolbar>
           <Typography
+            style={{ outline: "none" }}
             component={Link}
             to="/"
             variant="h6"
@@ -51,20 +52,20 @@ function Navbar({ totalItems }) {
             </Link>
           </div>
 
-          {/* {location.pathname === "/" && ( */}
-          <div className={classes.button}>
-            <IconButton
-              component={Link}
-              to="/cart"
-              aria-label="show cart items"
-              color="inherit"
-            >
-              <Badge badgeContent={2} color="secondary">
-                <ShoppingCart />
-              </Badge>
-            </IconButton>
-          </div>
-          {/* )} */}
+          {location.pathname === "/cart" ? null : (
+            <div className={classes.button}>
+              <IconButton
+                component={Link}
+                to="/cart"
+                aria-label="show cart items"
+                color="inherit"
+              >
+                <Badge badgeContent={totalItems} color="secondary">
+                  <ShoppingCart />
+                </Badge>
+              </IconButton>
+            </div>
+          )}
         </Toolbar>
       </AppBar>
     </>

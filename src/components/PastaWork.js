@@ -5,7 +5,7 @@ import Products from "./Products/Products";
 
 import logo from "../image/logonobg-01.png";
 
-function PastaWork() {
+function PastaWork({ products, onAddToCart }) {
   return (
     <div className="pastawork">
       <div className="pastawork__top">
@@ -33,7 +33,11 @@ function PastaWork() {
         </div>
 
         <div className="pastawork__right">
-          <Products />
+          <Products
+            products={products}
+            type={"Pasta Category"}
+            onAddToCart={onAddToCart}
+          />
         </div>
       </div>
     </div>

@@ -5,3 +5,4 @@ export { default as Main } from "./Main";
 export { default as PastaWork } from "./PastaWork";
 export { default as WineWork } from "./WineWork";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as Cart } from "./Cart/Cart";
