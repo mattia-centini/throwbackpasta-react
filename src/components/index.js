@@ -1,5 +1,5 @@
 export { default as About } from "./About";
-export { default as CardsContainer } from "./CardsContainer";
+export { default as Cards } from "./Cards/Cards";
 export { default as Contacts } from "./Contacts";
 export { default as PastaWork } from "./PastaWork";
 export { default as WineWork } from "./WineWork";

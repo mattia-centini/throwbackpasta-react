@@ -20,7 +20,12 @@ function Navbar({ totalItems }) {
 
   return (
     <>
-      <AppBar position="fixed" className={classes.appBar} color="inherit">
+      <AppBar
+        position="absolute"
+        className={classes.appBar}
+        color="inherit"
+        id="header"
+      >
         <Toolbar>
           <Typography
             style={{ outline: "none" }}

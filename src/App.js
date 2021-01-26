@@ -8,7 +8,7 @@ import {
   PastaWork,
   Contacts,
   Main,
-  CardsContainer,
+  Cards,
   About,
   Cart,
   Checkout,
@@ -104,8 +104,8 @@ function App() {
 
           <Route exact path="/">
             <Main />
+            <Cards />
             <About />
-            <CardsContainer />
             <Contacts />
           </Route>
         </Switch>
