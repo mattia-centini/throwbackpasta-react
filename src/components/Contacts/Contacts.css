@@ -17,7 +17,7 @@
       rgba(224, 224, 224, 0.3),
       rgba(224, 224, 224, 0.3)
     ),
-    url("../image/pastachef.jpg");
+    url("../../image/pastachef.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   flex: 1;

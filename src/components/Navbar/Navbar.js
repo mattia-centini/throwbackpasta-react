@@ -9,6 +9,7 @@ import {
   Typography,
   Button,
 } from "@material-ui/core";
+import { Link as Scroll } from "react-scroll";
 import { ShoppingCart } from "@material-ui/icons";
 import logo from "../../image/logonobg-01.png";
 import { Link, useLocation } from "react-router-dom";
@@ -44,17 +45,17 @@ function Navbar({ totalItems }) {
             Throwback Pasta
           </Typography>
           <div className={classes.grow}>
-            <Link href="#test">
+            <Scroll to="about" smooth={true}>
               <Button>About Me</Button>
-            </Link>
+            </Scroll>
 
-            <Link>
+            <Scroll to="workshops" smooth={true}>
               <Button>Workshops</Button>
-            </Link>
+            </Scroll>
 
-            <Link>
+            <Scroll to="contacts" smooth={true}>
               <Button>Contacts</Button>
-            </Link>
+            </Scroll>
           </div>
 
           {location.pathname === "/cart" ? null : (

@@ -12,6 +12,7 @@ import {
   About,
   Cart,
   Checkout,
+  Footer,
 } from "./components";
 import { commerce } from "./lib/commerce";
 
@@ -79,10 +80,10 @@ function App() {
       <div className="app">
         <Navbar totalItems={cart.total_items} />
         <Switch>
-          <Route path="/wine">
+          <Route exact path="/wine">
             <WineWork />
           </Route>
-          <Route path="/pasta">
+          <Route exact path="/pasta">
             <PastaWork products={products} onAddToCart={handleAddToCard} />
           </Route>
           <Route exact path="/checkout">

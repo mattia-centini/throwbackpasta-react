@@ -16,12 +16,12 @@ export default makeStyles((theme) => ({
     },
     display: "flex",
     alignItems: "center",
+    textAlign: "center",
   },
   pin: {
     backgroundImage: `url(${pin})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    // backgroundColor: "red",
     height: "70px",
     width: "70px",
   },
@@ -29,20 +29,39 @@ export default makeStyles((theme) => ({
     backgroundImage: `url(${pin})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    // backgroundColor: "red",
     height: "70px",
     width: "70px",
     webkitTransform: "scaleX(-1)",
     transform: "scaleX(-1)",
   },
-  toolbar: theme.mixins.toolbar,
-  content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
+
+  card: {
+    display: "flex",
+    height: "80%",
+    justifyContent: "center",
+    padding: 50,
+    margin: 50,
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      padding: 10,
+      margin: 0,
+    },
   },
 
-  title: {
-    textAlign: "center",
+  details: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
+    flex: "1 0 auto",
+    [theme.breakpoints.down("md")]: {
+      textAlign: "center",
+    },
+  },
+  cover: {
+    minWidth: "40%",
+  },
+  containerCard: {
+    height: "100vh",
   },
 }));

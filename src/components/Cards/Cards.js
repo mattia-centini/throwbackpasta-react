@@ -2,9 +2,8 @@ import React from "react";
 import Card from "./Card/Card";
 import pastachef from "../../image/pastachef.jpg";
 import winepour from "../../image/winepour.jpg";
-import pin from "../../image/pin-01.png";
 import { Link } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Grid } from "@material-ui/core";
+import { AppBar, Toolbar, Typography, Grid, Button } from "@material-ui/core";
 import useStyles from "./styles";
 import useWindowPosition from "../../hooks/useWindowPosition";
 
@@ -25,6 +24,7 @@ function Cards() {
   return (
     <div className={classes.root} id="workshops">
       <AppBar
+        id="workshop-cards"
         position="relative"
         color="transparent"
         className={classes.appBar}
@@ -42,24 +42,25 @@ function Cards() {
         <div className={classes.toolbar} />
         <Grid container justify="space-around" spacing={2}>
           <Grid item xs={12} sm={4} md={6}>
-            <Card
-              component={Link}
-              to="/pasta"
-              src={pastachef}
-              title={details[0].title}
-              text={details[0].text}
-              checked={checked}
-            />
+            <Link to="./pasta">
+              <Card
+                src={pastachef}
+                title={details[0].title}
+                text={details[0].text}
+                checked={checked}
+              />
+            </Link>
           </Grid>
+
           <Grid item xs={12} sm={4} md={6}>
-            <Card
-              component={Link}
-              to="/wine"
-              src={winepour}
-              title={details[1].title}
-              text={details[1].text}
-              checked={checked}
-            />
+            <Link to="./wine">
+              <Card
+                src={winepour}
+                title={details[1].title}
+                text={details[1].text}
+                checked={checked}
+              />
+            </Link>
           </Grid>
         </Grid>
       </main>

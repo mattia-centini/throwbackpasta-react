@@ -7,6 +7,8 @@ import {
   IconButton,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Link as Scroll } from "react-scroll";
+
 function Main() {
   const [checked, setChecked] = useState(false);
   const classes = useStyles();
@@ -19,18 +21,22 @@ function Main() {
     <div className={classes.root}>
       <CssBaseline />
       <div className={classes.toolbar} />
-      <Collapse
-        in={checked}
-        {...(true ? { timeout: 1000 } : {})}
-        collapsedHeight={50}
-      >
-        <Typography variant="h1" style={{ color: "white" }} color="inherit">
-          Landing Page
-        </Typography>
-        <IconButton>
-          <ExpandMoreIcon className={classes.expandIcon} />
-        </IconButton>
-      </Collapse>
+      <div className={classes.title}>
+        <Collapse
+          in={checked}
+          {...(true ? { timeout: 1000 } : {})}
+          collapsedHeight={50}
+        >
+          <Typography variant="h1" style={{ color: "white" }} color="inherit">
+            Discover more
+          </Typography>
+          <Scroll to="workshop-cards" smooth={true}>
+            <IconButton>
+              <ExpandMoreIcon className={classes.expandIcon} />
+            </IconButton>
+          </Scroll>
+        </Collapse>
+      </div>
     </div>
   );
 }

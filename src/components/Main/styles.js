@@ -14,4 +14,10 @@ export default makeStyles((theme) => ({
     color: "#f6f6f6",
     fontSize: "4rem",
   },
+  title: {
+    [theme.breakpoints.down("md")]: {
+      position: "absolute",
+      top: "30%",
+    },
+  },
 }));
