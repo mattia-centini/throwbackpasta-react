@@ -2,7 +2,7 @@ export { default as About } from "./About/About";
 export { default as Cards } from "./Cards/Cards";
 export { default as Contacts } from "./Contacts/Contacts";
 export { default as PastaWork } from "./PastaWork/PastaWork";
-export { default as WineWork } from "./WineWork";
+export { default as WineWork } from "./WineWork/WineWork";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as Cart } from "./Cart/Cart";
 export { default as Checkout } from "./CheckoutForm/Checkout/Checkout";

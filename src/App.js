@@ -81,7 +81,7 @@ function App() {
         <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path="/wine">
-            <WineWork />
+            <WineWork products={products} onAddToCart={handleAddToCard} />
           </Route>
           <Route exact path="/pasta">
             <PastaWork products={products} onAddToCart={handleAddToCard} />
